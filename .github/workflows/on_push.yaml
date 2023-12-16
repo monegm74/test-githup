@@ -1,0 +1,13 @@
+name: my-workflow
+
+on: 
+  push:
+    branches:
+     - dev
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print some random massage
+        run : echo "some random massage!"
